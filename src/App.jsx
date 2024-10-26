@@ -85,7 +85,7 @@ function App() {
 
   // remove selected players 
   const handleDelete = (newPlayer) => {
-    toast.warn(`${newPlayer.name} removed!!`);
+    toast.warn(`${newPlayer.name} Removed!!`);
     handleCashback(newPlayer);
     const remaining = addNewPlayer.filter(p => p != newPlayer);
     setAddNewPlayer(remaining);
