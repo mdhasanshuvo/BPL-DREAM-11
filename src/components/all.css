@@ -1,0 +1,13 @@
+.news{
+    background: rgb(250,208,172);
+    background: linear-gradient(210deg, rgba(250,208,172,1) 0%, rgba(255,255,255,1) 20%,rgba(255,255,255,1) 70%, rgba(214,240,250,1) 100%);
+}
+.btn-gradient{
+    background: rgb(229,179,92);
+    background: linear-gradient(220deg, rgba(229,179,92,1) 0%, rgba(252,210,106,1) 50%, rgba(202,116,169,1) 100%);
+}
+.active{
+    background-color: #E7FE29;
+    font-size:16px;
+    font-weight: 600;
+}
