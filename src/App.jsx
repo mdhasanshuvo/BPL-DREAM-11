@@ -1,4 +1,6 @@
 import { useEffect, useState } from 'react'
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -6,7 +8,7 @@ import Toggle from './components/Toggle'
 
 function App() {
 
-  // toggle funtionality
+  // toggle functionality
   const [isActive, setIsActive] = useState({
     cart: true,
     status: 'Available'
@@ -61,15 +63,16 @@ function App() {
       setSelectedCount(selectedCount + 1);
       const newPlayer = [...addNewPlayer, addPlayer];
       setAddNewPlayer(newPlayer);
+      toast.success(`Congrats!! ${addPlayer.name} is now in your squad`)
     }
     else if (selectedCount >= 6) {
-      alert('Already 6 added')
+      toast.error('Already 6 players added')
     }
     else if (isExist) {
-      alert('Already exist')
+      toast.error(`${addPlayer.name} already in your squad`)
     }
     else {
-      alert('insufficient balance')
+      toast.error("Insufficient balance!");
     }
   }
 
@@ -82,16 +85,19 @@ function App() {
 
   // remove selected players 
   const handleDelete = (newPlayer) => {
+    toast.warn(`${newPlayer.name} removed!!`);
     handleCashback(newPlayer);
     const remaining = addNewPlayer.filter(p => p != newPlayer);
     setAddNewPlayer(remaining);
     setSelectedCount(selectedCount - 1);
+    
   }
 
 
 
   return (
     <>
+
       {/* Header Sections */}
       <Header handleCoin={handleCoin} coin={coin}></Header>
 

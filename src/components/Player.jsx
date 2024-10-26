@@ -1,5 +1,5 @@
+import 'react-toastify/dist/ReactToastify.css';
 import PropType from 'prop-types'
-import Selected from './Selected';
 
 const Player = ({ player, coin, handleCoinDecrease }) => {
     const { image, name, country, role, batting_style, bowling_style, price } = player;
@@ -25,9 +25,10 @@ const Player = ({ player, coin, handleCoinDecrease }) => {
             </div>
             <div className="flex items-center justify-between">
                 <h4 className="text-black font-semibold text-base">Price: ${price}</h4>
-                <button onClick={()=>{
-                    handleCoinDecrease(price,player)
+                <button onClick={() => {
+                    handleCoinDecrease(price, player)
                 }} className="btn btn-outline border-inherit text-black font-normal text-sm">Choose Player</button>
+
             </div>
         </div>
     );

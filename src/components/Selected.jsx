@@ -1,3 +1,6 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const Selected = ({ NewPlayer, handleDelete }) => {
     const { image, name, batting_style } = NewPlayer;
     return (
@@ -10,7 +13,7 @@ const Selected = ({ NewPlayer, handleDelete }) => {
                         <p className="opacity-60">{batting_style}</p>
                     </div>
                 </div>
-                <i onClick={()=>{
+                <i onClick={() => {
                     handleDelete(NewPlayer)
                 }} className="fa-solid fa-trash cursor-pointer"></i>
             </div>
