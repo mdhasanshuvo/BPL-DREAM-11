@@ -1,5 +1,5 @@
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PropType from 'prop-types'
 
 const Selected = ({ NewPlayer, handleDelete }) => {
     const { image, name, batting_style } = NewPlayer;
@@ -20,5 +20,10 @@ const Selected = ({ NewPlayer, handleDelete }) => {
         </div>
     );
 };
+
+Selected.propTypes = {
+    handleDelete: PropType.func,
+    NewPlayer: PropType.obj
+}
 
 export default Selected;

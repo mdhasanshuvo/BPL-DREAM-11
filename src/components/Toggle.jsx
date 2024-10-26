@@ -40,8 +40,8 @@ const Toggle = ({ handleIsActive, isActive, coin, handleCoinDecrease, selectedCo
             {!isActive.cart &&
                 <div className="container mx-auto px-4 pt-6">
                     <button onClick={() => {
-                            handleIsActive('Available')
-                        }} className="btn bg-[#E7FE29] border-inherit rounded-xl font-bold ">Add More Player</button>
+                        handleIsActive('Available')
+                    }} className="btn bg-[#E7FE29] border-inherit rounded-xl font-bold ">Add More Player</button>
                 </div>
             }
 
@@ -52,6 +52,12 @@ const Toggle = ({ handleIsActive, isActive, coin, handleCoinDecrease, selectedCo
 Toggle.propTypes = {
     handleIsActive: PropType.func,
     isActive: PropType.object,
+    coin: PropType.number,
+    handleCoinDecrease: PropType.func,
+    selectedCount: PropType.number,
+    players: PropType.array,
+    addNewPlayer: PropType.array,
+    handleDelete: PropType.func
 }
 
 export default Toggle;

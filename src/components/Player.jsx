@@ -1,7 +1,7 @@
 import 'react-toastify/dist/ReactToastify.css';
 import PropType from 'prop-types'
 
-const Player = ({ player, coin, handleCoinDecrease }) => {
+const Player = ({ player, handleCoinDecrease }) => {
     const { image, name, country, role, batting_style, bowling_style, price } = player;
     return (
         <div className="p-4 border rounded-2xl space-y-4">
@@ -36,6 +36,7 @@ const Player = ({ player, coin, handleCoinDecrease }) => {
 
 Player.propTypes = {
     player: PropType.object,
+    handleCoinDecrease: PropType.func
 }
 
 export default Player;

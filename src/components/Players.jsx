@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
 import Player from "./Player";
+import PropType from 'prop-types'
 
 const Players = ({ coin, handleCoinDecrease, players }) => {
 
@@ -19,5 +19,11 @@ const Players = ({ coin, handleCoinDecrease, players }) => {
 
     );
 };
+
+Players.propTypes = {
+    coin: PropType.number,
+    handleCoinDecrease: PropType.func,
+    players: PropType.array,
+}
 
 export default Players;
