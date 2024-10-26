@@ -36,6 +36,15 @@ const Toggle = ({ handleIsActive, isActive, coin, handleCoinDecrease, selectedCo
                     </Selected>
                 ))}
 
+
+            {!isActive.cart &&
+                <div className="container mx-auto px-4 pt-6">
+                    <button onClick={() => {
+                            handleIsActive('Available')
+                        }} className="btn bg-[#E7FE29] border-inherit rounded-xl font-bold ">Add More Player</button>
+                </div>
+            }
+
         </div>
     );
 };
