@@ -53,7 +53,7 @@
 
 ## 🌐 Live Demo  
 Experience the app live:  
-🔗 **[BPL-DREAM 11](https://assignment-7-bpl-dream-11.netlify.app/)**  
+🔗 **[BPL-DREAM 11](https://bpl-dream-11-cricket-team-builder.netlify.app)**  
 
 ---
 
