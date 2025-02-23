@@ -1,4 +1,4 @@
-# BPL-DREAM 11 ![BPL-DREAM 11 Logo](./src/assets/logo.png) 
+# <img width="30px" src="./src/assets/logo.png"/> BPL-DREAM 11
 
 ## 🏏 Overview  
 **BPL-DREAM 11** is an interactive React-based web application that allows users to create and manage their dream cricket teams. Designed with a user-friendly interface and smooth interactivity, the app enables players to select cricketers, manage budgets, and optimize team formation. It delivers an immersive experience for cricket enthusiasts who love fantasy team-building.  
